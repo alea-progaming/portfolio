@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { assets } from "@/assets/assets";
 import React, { useState } from "react";
-import SideMenu from "./SideMenu";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -14,19 +13,17 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="font-outfit w-full fixed px-8 py-4 lg:px-12 xl:px-16 flex justify-between items-center z-50">
+      <nav className="font-outfit w-full fixed px-8 py-4 lg:px-12 xl:px-16 flex justify-between items-center z-50 backdrop-blur-md">
         <h1 className="font-kronaOne text-2xl">
           <Link href="/">
             Mika<span className="text-[#8E05C2] text-3xl">.</span>
           </Link>
         </h1>
-
-        <ul className="hidden md:flex items-center gap-6 border-1 border-[#8E05C2] rounded-full py-4 px-4">
+        <ul className="hidden md:flex items-center gap-6 border-1 border-[#8E05C2] rounded-full py-3 px-8">
           {["Home", "About", "Projects", "Links", "Tools"].map((label) => (
             <Link href={`#${label.toLowerCase()}`}>{label}</Link>
           ))}
         </ul>
-
         <div className="flex items-center gap-4">
           <button>
             <Image
@@ -37,7 +34,7 @@ const Navbar = () => {
           </button>
           <a
             href="mailto:mikaela.programming@gmail.com"
-            className="hidden lg:flex align-center border-1 rounded-full px-10 py-3"
+            className="hidden lg:flex align-center border-1 rounded-full px-8 py-3"
           >
             Contact me
             <Image
@@ -56,11 +53,33 @@ const Navbar = () => {
             />
           </button>
         </div>
-
-        <SideMenu
-          isOpen={isMenuOpen}
-          closeMenu={closeMenu}
-        />
+        <ul
+          className={`md:hidden bg-[#8E05C2] flex flex-col gap-4 h-screen py-20 px-10 fixed top-0 bottom-0 w-64 z-50 transition-transform duration-500 text-[20px] ${
+            isMenuOpen ? "translate-x-0 right-0" : "translate-x-full right-0"
+          }`}
+        >
+          <div
+            className="absolute top-6 right-6"
+            onClick={closeMenu}
+          >
+            <Image
+              src={assets.close}
+              alt="close menu"
+              className="w-5 cursor-pointer"
+            />
+          </div>
+          {["Home", "About", "Projects", "Links", "Tools"].map((label) => (
+            <li key={label}>
+              {/* // * change the # to / so I can navigate thru pages */}
+              <Link
+                href={`#${label.toLowerCase()}`}
+                onClick={closeMenu}
+              >
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </nav>
     </>
   );
