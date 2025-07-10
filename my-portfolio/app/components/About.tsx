@@ -6,7 +6,7 @@ const About = () => {
           &rsaquo;&lsaquo;<span className="text-3xl text-white">About me</span>
           &rsaquo;&lsaquo;
         </h1>
-        <div className="tracking-wider mt-16 flex flex-col items-center gap-12 md:flex-row md:items-start  md:gap-24">
+        <div className="tracking-wider md:mt-16 flex flex-col items-center gap-12 md:flex-row md:items-start md:gap-24">
           <div className="w-[250px] h-[250px] bg-purple-300">Avatar Motion</div>
           <div className="text-justify leading-relaxed max-w-xl w-full">
             <h2 className="text-2xl font-bold mb-4">Hi, I'm Mika!</h2>

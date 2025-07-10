@@ -14,7 +14,7 @@ const Header = () => {
   };
   return (
     <>
-      <section className="w-dvw h-dvh flex flex-col items-center justify-center gap-28 font-outfit">
+      <section className="w-[80vw] mx-auto h-dvh flex flex-col items-center justify-center gap-28 font-outfit">
         {/* // * Make this animated using GSAP */}
         <div className="relative text-center space-y-4 w-[70%] md:w-auto">
           <Image
@@ -29,7 +29,7 @@ const Header = () => {
         </p>
 
         {/*  Call to action area */}
-        <div className="flex items-center gap-4">
+        <div className="flex flex-col md:flex-row items-center gap-4">
           <a
             href="mailto:mikaela.programming@gmail.com"
             className="inline-flex items-center gap-2 border border-[#8e05c2] py-3 px-5 rounded-2xl"
