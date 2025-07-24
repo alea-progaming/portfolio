@@ -21,7 +21,12 @@ const Navbar = () => {
         </h1>
         <ul className="hidden md:flex items-center gap-6 border-1 border-[#8E05C2] rounded-full py-3 px-8">
           {["Home", "About", "Projects", "Links", "Tools"].map((label) => (
-            <Link href={`#${label.toLowerCase()}`}>{label}</Link>
+            <Link
+              key={label}
+              href={`#${label.toLowerCase()}`}
+            >
+              {label}
+            </Link>
           ))}
         </ul>
         <div className="flex items-center gap-4">
@@ -72,6 +77,7 @@ const Navbar = () => {
             <li key={label}>
               {/* // * change the # to / so I can navigate thru pages */}
               <Link
+                key={label}
                 href={`#${label.toLowerCase()}`}
                 onClick={closeMenu}
               >

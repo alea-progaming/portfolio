@@ -1,3 +1,4 @@
+import Item1 from "./BentoItems/Item1";
 const Bento = () => {
   return (
     <>
@@ -7,9 +8,11 @@ const Bento = () => {
           &rsaquo;&lsaquo;
         </h1>
         <div className="md:grid grid-cols-12 w-full xl:w-[60%] lg:w-[80%] md:w-[90%] h-[80%] gap-3 mx-auto">
-          <div className="col-start-1 col-span-8 row-start-1 row-span-1 bg-pink-300">
-            Grid
+          {/* Item 1 */}
+          <div className="col-start-1 col-span-8 row-start-1 row-span-1   overflow-hidden rounded-2xl">
+            <Item1 />
           </div>
+
           <div className="col-start-9 col-span-4 row-start-1 row-span-2 bg-blue-300">
             Grid
           </div>
