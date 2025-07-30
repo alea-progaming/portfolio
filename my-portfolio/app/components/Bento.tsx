@@ -7,7 +7,7 @@ const Bento = () => {
           &rsaquo;&lsaquo;<span className="text-3xl text-white">Overview</span>
           &rsaquo;&lsaquo;
         </h1>
-        <div className="md:grid grid-cols-12 w-full xl:w-[60%] lg:w-[80%] md:w-[90%] h-[80%] gap-3 mx-auto">
+        <div className="lg:grid grid-cols-12 w-full xl:w-[70%] lg:w-[80%] md:w-[90%] gap-3 mx-auto">
           {/* Item 1 */}
           <div className="col-start-1 col-span-8 row-start-1 row-span-1   overflow-hidden rounded-2xl">
             <Item1 />
