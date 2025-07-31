@@ -13,6 +13,7 @@ import design_notHighlighted from "./design_notHighlighted.png";
 import design_highlighted from "./design_highlighted.png";
 import code_notHighlighted from "./create_notHighlighted.png";
 import code_highlighted from "./create_highlighted.png";
+import thinkPNG from "./THINK.png";
 
 export const assets = {
   dropDown,
@@ -30,4 +31,5 @@ export const assets = {
   design_highlighted,
   code_notHighlighted,
   code_highlighted,
+  thinkPNG,
 };
