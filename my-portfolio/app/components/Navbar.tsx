@@ -20,11 +20,8 @@ const Navbar = () => {
           </Link>
         </h1>
         <ul className="hidden md:flex items-center gap-6 border-1 border-[#8E05C2] rounded-full py-3 px-8">
-          {["Home", "About", "Projects", "Links", "Tools"].map((label) => (
-            <Link
-              key={label}
-              href={`#${label.toLowerCase()}`}
-            >
+          {["Home", "About", "Overview", "Projects", "Skills"].map((label) => (
+            <Link key={label} href={`#${label.toLowerCase()}`}>
               {label}
             </Link>
           ))}
@@ -52,10 +49,7 @@ const Navbar = () => {
             className="block md:hidden ml-3 cursor-pointer"
             onClick={openMenu}
           >
-            <Image
-              src={assets.menu_white}
-              alt="navbar menu"
-            />
+            <Image src={assets.menu_white} alt="navbar menu" />
           </button>
         </div>
         <ul
@@ -63,17 +57,14 @@ const Navbar = () => {
             isMenuOpen ? "translate-x-0 right-0" : "translate-x-full right-0"
           }`}
         >
-          <div
-            className="absolute top-6 right-6"
-            onClick={closeMenu}
-          >
+          <div className="absolute top-6 right-6" onClick={closeMenu}>
             <Image
               src={assets.close}
               alt="close menu"
               className="w-5 cursor-pointer"
             />
           </div>
-          {["Home", "About", "Projects", "Links", "Tools"].map((label) => (
+          {["Home", "About", "Overview", "Projects", "Skills"].map((label) => (
             <li key={label}>
               {/* // * change the # to / so I can navigate thru pages */}
               <Link

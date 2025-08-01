@@ -38,7 +38,7 @@ const Item1 = () => {
   const current = hovered ?? selected;
 
   return (
-    <div className="bg-black/15 text-white h-full rounded-2xl border-3 border-white/15">
+    <div className="bg-black/15 text-white h-fit rounded-2xl border-3 border-white/15">
       <div className="flex items-center justify-center p-6 gap-5">
         {/* Words + Icons */}
         <div className="font-kronaOne flex flex-col gap-6">
@@ -80,7 +80,7 @@ const Item1 = () => {
 
         {/* Animation Display Box */}
         {/* // * check if which item is current specifically hovered over and then show the display box it matches with  */}
-        <div className="relative w-[400px] h-[230px] bg-black/50 rounded-lg border-black/15 border-1 overflow-hidden">
+        <div className="relative w-[400px] aspect-[16/9] bg-black/50 rounded-lg border-black/15 border-1 overflow-hidden">
           {/* THINK animation */}
           {current === "think" && (
             <MotionImage
@@ -171,10 +171,10 @@ function lifeStartsAt() {
       </div>
 
       {/* Decorative Blobs */}
-      <div className="relative blur-2xl -z-10">
-        <div className="absolute size-[150px] top-0 -left-15 bg-[#05C29F] rounded-full" />
+      {/* <div className="relative blur-2xl -z-10">
+        <div className="absolute size-[150px] -top-10 -left-15 bg-[#05C29F] rounded-full" />
         <div className="absolute size-[150px] -top-70 -right-20 bg-[#8E05C2] rounded-full" />
-      </div>
+      </div> */}
     </div>
   );
 };

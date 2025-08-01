@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Item1 from "./BentoItems/Item1";
+import Item2 from "./BentoItems/Item2";
 const Bento = () => {
   return (
     <>
@@ -10,14 +11,14 @@ const Bento = () => {
           &rsaquo;&lsaquo;<span className="text-3xl text-white">Overview</span>
           &rsaquo;&lsaquo;
         </h1>
-        <div className="lg:grid grid-cols-12 w-full xl:w-[70%] lg:w-[80%] md:w-[90%] gap-3 mx-auto">
+        <div className="lg:grid grid-cols-12 auto-rows-auto w-full h-fit xl:w-[70%] lg:w-[80%] md:w-[90%] gap-3 mx-auto">
           {/* Item 1 */}
-          <div className="col-start-1 col-span-8 row-start-1 row-span-1   overflow-hidden rounded-2xl">
+          <div className="col-start-1 col-span-8 overflow-hidden rounded-2xl">
             <Item1 />
           </div>
 
-          <div className="col-start-9 col-span-4 row-start-1 row-span-2 bg-blue-300">
-            Grid
+          <div className="col-start-9 col-span-4 row-start-1 row-span-2 overflow-hidden rounded-2xl">
+            <Item2 />
           </div>
           <div className="col-start-1 col-span-4 row-start-2 row-span-2 bg-purple-300">
             Grid
