@@ -15,7 +15,7 @@ import code_notHighlighted from "./create_notHighlighted.png";
 import code_highlighted from "./create_highlighted.png";
 import thinkPNG from "./THINK.png";
 
-export const assets = {
+export const icons = {
   dropDown,
   mail,
   moon_icon,
@@ -33,3 +33,96 @@ export const assets = {
   code_highlighted,
   thinkPNG,
 };
+
+export const skills = [
+  {
+    skills: "HTML",
+    img: "",
+    color: "",
+  },
+  {
+    skills: "CSS",
+    img: "",
+    color: "",
+  },
+  {
+    skills: "JavaScript",
+    img: "",
+    color: "",
+  },
+  {
+    skills: "TypeScript",
+    img: "",
+    color: "",
+  },
+  {
+    skills: "NodeJS",
+    img: "",
+    color: "",
+  },
+  {
+    skills: "ExpressJS",
+    img: "",
+    color: "",
+  },
+  {
+    skills: "React",
+    img: "",
+    color: "",
+  },
+  {
+    skills: "NextJS",
+    img: "",
+    color: "",
+  },
+  {
+    skills: "Vite",
+    img: "",
+    color: "",
+  },
+  {
+    skills: "Figma",
+    img: "",
+    color: "",
+  },
+  {
+    skills: "Tailwind CSS",
+    img: "",
+    color: "",
+  },
+  {
+    skills: "Bootstrap",
+    img: "",
+    color: "",
+  },
+  {
+    skills: "Framer Motion",
+    img: "",
+    color: "",
+  },
+  {
+    skills: "MySQL",
+    img: "",
+    color: "",
+  },
+  {
+    skills: "MongoDB",
+    img: "",
+    color: "",
+  },
+  {
+    skills: "Git",
+    img: "",
+    color: "f05033",
+  },
+  {
+    skills: "GitHub",
+    img: "",
+    color: "",
+  },
+  {
+    skills: "Vercel",
+    img: "",
+    color: "",
+  },
+];

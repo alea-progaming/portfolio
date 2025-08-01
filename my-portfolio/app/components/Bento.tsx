@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import Item1 from "./BentoItems/Item1";
 import Item2 from "./BentoItems/Item2";
 const Bento = () => {

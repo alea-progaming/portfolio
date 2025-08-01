@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { assets } from "@/assets/assets";
+import { icons } from "@/assets/assets";
 import React, { useState } from "react";
 import Link from "next/link";
 
@@ -29,7 +29,7 @@ const Navbar = () => {
         <div className="flex items-center gap-4">
           <button>
             <Image
-              src={assets.moon_icon}
+              src={icons.moon_icon}
               alt="dark mode toggle"
               className="w-6 h-6"
             />
@@ -40,7 +40,7 @@ const Navbar = () => {
           >
             Contact me
             <Image
-              src={assets.topRightArrow_white}
+              src={icons.topRightArrow_white}
               alt="Contact me"
               className="ml-4"
             />
@@ -49,7 +49,7 @@ const Navbar = () => {
             className="block md:hidden ml-3 cursor-pointer"
             onClick={openMenu}
           >
-            <Image src={assets.menu_white} alt="navbar menu" />
+            <Image src={icons.menu_white} alt="navbar menu" />
           </button>
         </div>
         <ul
@@ -59,7 +59,7 @@ const Navbar = () => {
         >
           <div className="absolute top-6 right-6" onClick={closeMenu}>
             <Image
-              src={assets.close}
+              src={icons.close}
               alt="close menu"
               className="w-5 cursor-pointer"
             />

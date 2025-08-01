@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { assets } from "@/assets/assets";
+import { icons } from "@/assets/assets";
 
 const circles = [
   { id: 1, size: 90, color: "#0D6EFD", x: "5%", y: "20%" },
@@ -64,7 +64,7 @@ const Header = () => {
           transition={{ duration: 1 }}
         >
           <Image
-            src={assets.designdevelop}
+            src={icons.designdevelop}
             alt="Design Develop"
             priority // optional but helps if it's above the fold
           />
@@ -106,20 +106,14 @@ const Header = () => {
         >
           Let's connect
           <span className="bg-[#8E05C2] p-1 rounded-full">
-            <Image
-              src={assets.arrowRight_white}
-              alt="Arrow right"
-            />
+            <Image src={icons.arrowRight_white} alt="Arrow right" />
           </span>
         </a>
         <button
           onClick={handleCopy}
           className="inline-flex gap-2 cursor-pointer"
         >
-          <Image
-            src={assets.copy_white}
-            alt="Copy email"
-          />
+          <Image src={icons.copy_white} alt="Copy email" />
           <p>{copied ? "Copied!" : "mikaela.programming@gmail.com"}</p>
         </button>
       </motion.div>

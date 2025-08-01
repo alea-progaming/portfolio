@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { assets } from "@/assets/assets";
+import { icons } from "@/assets/assets";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -21,16 +21,16 @@ const Item1 = () => {
   // dictionary object that maps each keyword to it's corresponding highlighted and non-highlighed containers
   const imageMap = {
     think: {
-      highlighted: assets.think_highlighted,
-      notHighlighted: assets.think_notHighlighted,
+      highlighted: icons.think_highlighted,
+      notHighlighted: icons.think_notHighlighted,
     },
     design: {
-      highlighted: assets.design_highlighted,
-      notHighlighted: assets.design_notHighlighted,
+      highlighted: icons.design_highlighted,
+      notHighlighted: icons.design_notHighlighted,
     },
     code: {
-      highlighted: assets.code_highlighted,
-      notHighlighted: assets.code_notHighlighted,
+      highlighted: icons.code_highlighted,
+      notHighlighted: icons.code_notHighlighted,
     },
   };
 
@@ -84,7 +84,7 @@ const Item1 = () => {
           {/* THINK animation */}
           {current === "think" && (
             <MotionImage
-              src={assets.thinkPNG}
+              src={icons.thinkPNG}
               alt="Think animation"
               width={500}
               height={500}
