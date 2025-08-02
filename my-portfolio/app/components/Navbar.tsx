@@ -21,7 +21,10 @@ const Navbar = () => {
         </h1>
         <ul className="hidden md:flex items-center gap-6 border-1 border-[#8E05C2] rounded-full py-3 px-8">
           {["Home", "About", "Overview", "Projects", "Skills"].map((label) => (
-            <Link key={label} href={`#${label.toLowerCase()}`}>
+            <Link
+              key={label}
+              href={`#${label.toLowerCase()}`}
+            >
               {label}
             </Link>
           ))}
@@ -49,7 +52,10 @@ const Navbar = () => {
             className="block md:hidden ml-3 cursor-pointer"
             onClick={openMenu}
           >
-            <Image src={icons.menu_white} alt="navbar menu" />
+            <Image
+              src={icons.menu_white}
+              alt="navbar menu"
+            />
           </button>
         </div>
         <ul
@@ -57,7 +63,10 @@ const Navbar = () => {
             isMenuOpen ? "translate-x-0 right-0" : "translate-x-full right-0"
           }`}
         >
-          <div className="absolute top-6 right-6" onClick={closeMenu}>
+          <div
+            className="absolute top-6 right-6"
+            onClick={closeMenu}
+          >
             <Image
               src={icons.close}
               alt="close menu"

@@ -14,6 +14,7 @@ import design_highlighted from "./design_highlighted.png";
 import code_notHighlighted from "./create_notHighlighted.png";
 import code_highlighted from "./create_highlighted.png";
 import thinkPNG from "./THINK.png";
+import html from "./html_icon.svg";
 
 export const icons = {
   dropDown,
@@ -37,78 +38,78 @@ export const icons = {
 export const skills = [
   {
     skills: "HTML",
-    img: "",
-    color: "",
+    img: html,
+    color: "#e34f26",
   },
   {
     skills: "CSS",
     img: "",
-    color: "",
+    color: "#38b2ac",
   },
   {
     skills: "JavaScript",
     img: "",
-    color: "",
+    color: "#323330",
   },
   {
     skills: "TypeScript",
     img: "",
-    color: "",
+    color: "#007acc",
   },
   {
     skills: "NodeJS",
     img: "",
-    color: "",
+    color: "#6da55f",
   },
   {
     skills: "ExpressJS",
     img: "",
-    color: "",
+    color: "#404d59",
   },
   {
     skills: "React",
     img: "",
-    color: "",
+    color: "#20232a",
   },
   {
     skills: "NextJS",
     img: "",
-    color: "",
+    color: "#000000",
   },
   {
     skills: "Vite",
     img: "",
-    color: "",
+    color: "#646cff",
   },
   {
     skills: "Figma",
     img: "",
-    color: "",
+    color: "#f24e1e",
   },
   {
     skills: "Tailwind CSS",
     img: "",
-    color: "",
+    color: "#38b2ac",
   },
   {
     skills: "Bootstrap",
     img: "",
-    color: "",
+    color: "#8511fa",
   },
   {
     skills: "Framer Motion",
     img: "",
-    color: "",
+    color: "#000000",
   },
   {
     skills: "MySQL",
     img: "",
-    color: "",
+    color: "#4479a1",
   },
   {
     skills: "MongoDB",
     img: "",
-    color: "",
+    color: "#4ea94b",
   },
   {
     skills: "Git",
@@ -118,11 +119,11 @@ export const skills = [
   {
     skills: "GitHub",
     img: "",
-    color: "",
+    color: "#121011",
   },
   {
     skills: "Vercel",
     img: "",
-    color: "",
+    color: "#000000",
   },
 ];
