@@ -12,10 +12,11 @@ const Bento = () => {
         </h1>
         <div className="lg:grid grid-cols-12 auto-rows-auto w-full h-fit xl:w-[70%] lg:w-[80%] md:w-[90%] gap-3 mx-auto">
           {/* Item 1 */}
-          <div className="col-start-1 col-span-8 overflow-hidden rounded-2xl">
+          <div className="col-start-1 col-span-8 h-fit row-start-1 row-span-1 overflow-hidden rounded-2xl">
             <Item1 />
           </div>
 
+          {/* Item 2 */}
           <div className="col-start-9 col-span-4 row-start-1 row-span-2 overflow-hidden rounded-2xl">
             <Item2 />
           </div>

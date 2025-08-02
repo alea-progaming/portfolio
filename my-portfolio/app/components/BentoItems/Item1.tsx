@@ -38,7 +38,7 @@ const Item1 = () => {
   const current = hovered ?? selected;
 
   return (
-    <div className="bg-black/15 text-white h-fit rounded-2xl border-3 border-white/15">
+    <div className="bg-black/15 text-white rounded-2xl border-3 border-white/15">
       <div className="flex items-center justify-center p-6 gap-5">
         {/* Words + Icons */}
         <div className="font-kronaOne flex flex-col gap-6">
@@ -171,10 +171,10 @@ function lifeStartsAt() {
       </div>
 
       {/* Decorative Blobs */}
-      {/* <div className="relative blur-2xl -z-10">
+      <div className="relative blur-2xl -z-10">
         <div className="absolute size-[150px] -top-10 -left-15 bg-[#05C29F] rounded-full" />
         <div className="absolute size-[150px] -top-70 -right-20 bg-[#8E05C2] rounded-full" />
-      </div> */}
+      </div>
     </div>
   );
 };
